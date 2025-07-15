@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my babyyyy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ceeacb;
+            color: #503434;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+        }
+        .letter {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            opacity: 0;
+            transition: opacity 2s ease-in;
+        }
+        .play-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #d97fc6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .letter {
+                padding: 15px;
+            }
+            .play-button {
+                font-size: 14px;
+                padding: 18px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <button class="play-button" onclick="playMusic()">click mo to baby</button>
+        <div class="letter" id="letter">
+            <h2>💌</h2>
+            <h1>15 months with you^^</h1>
+            <h2>💌</h2>
+            <p>Hi my babyyyy, my asawa, kaaway, kakampi, biefef, madalas anak,/p>
+            <p>Fifteen months of us, of growing together, of learning each other, of staying even through the tough, quiet, and messy parts. and yk honestly, I can't afford to lose what we have.</p>
+            <p>First things first, I would like to say sorry for all the times that I've been somehow hard to handle, and at the same time thank you for understanding me, kahit na minsan man hndi na maintindihan but I appreciate you for trying to understand me, I love you baby.</p>
+            <p>we're not perfect, we're still young and learning how to love each other and on top of that a long distance rs pa, minsan may konting asaran, tampuhan, o tahimikang walang label (yis, galing taina ako lahat), peroooo ang mahalaga hindi tayo sumusuko. kasi kahit saan pa umikot, ikaw pa rin ang palagi(shala).</p>
+            <p>just like the lyrics sa song choice ko dito hehe୧⁠(⁠＾⁠ ⁠〰⁠ ⁠＾⁠)⁠୨
+"hanggang sa huli, palagi, babalik parin sa yakap mo"—meaning kahit anong mangyari sayo parin ang uwi ko bae</p>
+            <p>korni pakinggan but it's true. even sa mga araw na ang gulo na ng mundo — ikaw yung constant kong pahinga. ung kahit magulo ako, may sense of calmness pag kausap kita or simply just by feeling your presence na nandiyan ka is enough to make me feel at ease(and I hope that you feel the same way).
+ung kahit may mga araw na parang gusto ko na lang matulog forever (LOL), bigla kang magme-message ng random updates mo at parang okay na ulit lahat, okay na 'ko.(gets mo ba 'ko?😭)
+</p>
+            <p>anw, thank you for always being there. for trying. for staying.
+so cheers to us baby, sa 15 months na sobrang daming ganap sana kayanin mo pa ugali ko nevertheless wala ka namang choice bhwuahauhahah 
+</p>
+            <p>I love you. Kahit minsan gusto kitang i-block kase iniinis mo ko🥰, ems but fr no matter what happens ikaw ang pipiliin ko palagi(threat to siya) hihihi loveyou so muchooo babyyy ko</p>
+            <img src="fourth.gif"250px" <i class="fa fa-align-center" aria-hidden="true"></i>
+            <p>I love you bae, always in all ways.</p>
+            <p>From,</p>
+            <p><strong>chingg^3^</strong></p>
+            
+        </div>
+    </div>
+    
+    <audio id="background-music" loop>
+        <source src="background-music.mp3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        window.onload = function() {
+            document.getElementById("letter").style.opacity = "1";
+        };
+
+        function playMusic() {
+            let audio = document.getElementById("background-music");
+            audio.play().catch(error => console.log("Autoplay blocked: ", error));
+        }
+    </script>
+</body>
+</html>
